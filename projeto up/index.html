@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="Screenshots/WhatsApp Image 2025-11-06 at 11.27.29.jpeg" alt="">
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Buscar">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#" class="active">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Biblioteca</a>
+            <a href="#">Testes</a>
+            <a href="#">Empregos</a>
+        </nav>
+
+        <div class="nav-icons">
+            <button class="account-btn"><i class="fa-regular fa-user"></i></button>
+            <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <script>
+        // Menu hambúrguer
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            menuToggle.classList.toggle("active");
+        });
+    </script>
+    <!-- Seção de boas-vindas -->
+    <main class="main-content">
+        <div class="ilustracao">
+            <img src="Screenshots/carinha.png"
+                alt="Ilustração de um homem de terno com um laptop, dando as boas-vindas">
+        </div>
+
+        <div class="texto-boas-vindas">
+            Bem – vindo (a)
+            <span class="plataforma">à sua plataforma de</span>
+            <span class="plataforma">oportunidades</span>
+        </div>
+    </main>
+
+    <!-- Seção de recursos -->
+    <section class="recursos">
+        <h2>Recursos Principais</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Teste</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card destaque">
+                <i class="fa-solid fa-person-walking-arrow-right"></i>
+                <h3>Progresso</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Biblioteca</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-days"></i>
+                <h3>Cronograma</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Empregos</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-user"></i>
+                <h3>Perfil</h3>
+                <button class="btn">Saiba mais</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Plataforma de Oportunidades</p>
+    </footer>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
